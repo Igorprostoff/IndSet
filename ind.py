@@ -45,5 +45,21 @@ if resh=="1":
     print(restylec(to_dnf(reb, True)))
 
 #TODO ЧТЕНИЕ С ФАЙЛА И ДОКИНУТЬ ВАРИАНТЫ ПЕРЕМЕННЫХ НА ВХОДЕ (х1,х2,х3...) или (у1,у2, у3...) или я хз еще как но надо добавить
-    
+if resh=="4":
+    f = open("f.txt")
+    for line in f:
+        reb=line
+        reb = reb.replace('1','A')
+        reb = reb.replace('2','B')
+        reb = reb.replace('3','C')
+        reb = reb.replace('4','D')
+        reb = reb.replace('5','F')
+        reb = reb.replace('6','G')
+        reb = reb.replace('7','H')
+        reb = reb.replace('v','|')
+        reb = reb.replace(')(',')&(')
+        reb = reb.replace('-','~')
+        print(reb)   
+        print(restylec(to_dnf(reb, True)))
+        
 os.system("pause")
